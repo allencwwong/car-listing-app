@@ -12,6 +12,7 @@ gem 'unirest'
 gem 'geocoder'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'rails_12factor', group: :production
 
 gem 'rails', '4.2.4'
 # Use SCSS for stylesheets

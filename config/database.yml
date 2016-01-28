@@ -17,6 +17,9 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  database: car-listing-app_production
+  username: allenwong
+  password: <%= ENV['CAR-LISTING-APP_DATABASE_PASSWORD'] %>  
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -83,3 +86,5 @@ production:
   database: car-listing-app_production
   username: car-listing-app
   password: <%= ENV['CAR-LISTING-APP_DATABASE_PASSWORD'] %>
+  encoding: unicode
+  pool: 5
